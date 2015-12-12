@@ -1,0 +1,148 @@
+"
+"
+"                                   
+"           ________  ___      ___ ___  _____ ______      
+"          |\_____  \|\  \    /  /|\  \|\   _ \  _   \    
+"           \|___/  /\ \  \  /  / | \  \ \  \\\__\ \  \   
+"               /  / /\ \  \/  / / \ \  \ \  \\|__| \  \  
+"              /  /_/__\ \    / /   \ \  \ \  \    \ \  \ 
+"             |\________\ \__/ /     \ \__\ \__\    \ \__\
+"              \|_______|\|__|/       \|__|\|__|     \|__|
+"                                                           
+"
+"
+"   Copyright (c) 2015 monological
+"   Licensed under MIT License
+"
+"
+"
+"
+filetype off
+set rtp+=~/.zvim/plugins/vundle
+call vundle#rc()
+
+" Core
+Bundle 'VundleVim/vundle'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+
+" General
+Bundle 'scrooloose/nerdtree'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'spf13/vim-colors'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-repeat'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tacahiroy/ctrlp-funky'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'vim-scripts/sessionman.vim'
+Bundle 'matchit.zip'
+Bundle 'bling/vim-airline'
+Bundle 'bling/vim-bufferline'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'mbbill/undotree'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'vim-scripts/restore_view.vim'
+Bundle 'mhinz/vim-signify'
+Bundle 'tpope/vim-abolish.git'
+Bundle 'osyo-manga/vim-over'
+Bundle 'kana/vim-textobj-user'
+Bundle 'kana/vim-textobj-indent'
+Bundle 'gcmt/wildfire.vim'
+
+" Programming 
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-fugitive'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'tpope/vim-commentary'
+Bundle 'godlygeek/tabular'
+if executable('ctags')
+    Bundle 'majutsushi/tagbar'
+endif
+
+" Php
+Bundle 'spf13/PIV'
+Bundle 'arnaud-lb/vim-php-namespace'
+Bundle 'beyondwords/vim-twig'
+
+" Python
+Bundle 'klen/python-mode'
+Bundle 'yssource/python.vim'
+Bundle 'python_match.vim'
+Bundle 'pythoncomplete'
+
+" Javascript
+Bundle 'elzr/vim-json'
+Bundle 'groenewege/vim-less'
+Bundle 'pangloss/vim-javascript'
+Bundle 'briancollins/vim-jst'
+Bundle 'kchmck/vim-coffee-script'
+
+" Scala
+Bundle 'derekwyatt/vim-scala'
+Bundle 'derekwyatt/vim-sbt'
+Bundle 'xptemplate'
+
+" Haskell
+Bundle 'travitch/hasksyn'
+Bundle 'dag/vim2hs'
+Bundle 'Twinside/vim-haskellConceal'
+Bundle 'Twinside/vim-haskellFold'
+Bundle 'lukerandall/haskellmode-vim'
+Bundle 'eagletmt/neco-ghc'
+Bundle 'eagletmt/ghcmod-vim'
+Bundle 'Shougo/vimproc'
+Bundle 'adinapoli/cumino'
+Bundle 'bitc/vim-hdevtools'
+
+" Html
+Bundle 'amirh/HTML-AutoCloseTag'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'gorodinskiy/vim-coloresque'
+Bundle 'tpope/vim-haml'
+
+" Ruby
+Bundle 'tpope/vim-rails'
+
+" Puppet
+Bundle 'rodjek/vim-puppet'
+
+" Go
+Bundle 'fatih/vim-go'
+
+" Misc
+Bundle 'wting/rust.vim'
+Bundle 'tpope/vim-markdown'
+Bundle 'spf13/vim-preview'
+Bundle 'tpope/vim-cucumber'
+Bundle 'cespare/vim-toml'
+Bundle 'quentindecock/vim-cucumber-align-pipes'
+Bundle 'saltstack/salt-vim'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
