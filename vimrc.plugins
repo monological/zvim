@@ -17,111 +17,112 @@
 "
 "
 "
-filetype off
-set rtp+=~/.zvim/plugins/vundle
+set nocompatible
+set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
+filetype off
 
 " Core
-Bundle 'VundleVim/vundle'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
+Plugin 'VundleVim/vundle'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
 
 " General
-Bundle 'scrooloose/nerdtree'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'spf13/vim-colors'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tacahiroy/ctrlp-funky'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'vim-scripts/sessionman.vim'
-Bundle 'matchit.zip'
-Bundle 'bling/vim-airline'
-Bundle 'bling/vim-bufferline'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'mbbill/undotree'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'vim-scripts/restore_view.vim'
-Bundle 'mhinz/vim-signify'
-Bundle 'tpope/vim-abolish.git'
-Bundle 'osyo-manga/vim-over'
-Bundle 'kana/vim-textobj-user'
-Bundle 'kana/vim-textobj-indent'
-Bundle 'gcmt/wildfire.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'spf13/vim-colors'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tacahiroy/ctrlp-funky'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'vim-scripts/sessionman.vim'
+Plugin 'matchit.zip'
+Plugin 'bling/vim-airline'
+Plugin 'bling/vim-bufferline'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'mbbill/undotree'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'vim-scripts/restore_view.vim'
+Plugin 'mhinz/vim-signify'
+Plugin 'tpope/vim-abolish.git'
+Plugin 'osyo-manga/vim-over'
+Plugin 'kana/vim-textobj-user'
+Plugin 'kana/vim-textobj-indent'
+Plugin 'gcmt/wildfire.vim'
 
 " Programming 
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-fugitive'
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-commentary'
-Bundle 'godlygeek/tabular'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-commentary'
+Plugin 'godlygeek/tabular'
 if executable('ctags')
     Bundle 'majutsushi/tagbar'
 endif
 
 " Php
-Bundle 'spf13/PIV'
-Bundle 'arnaud-lb/vim-php-namespace'
-Bundle 'beyondwords/vim-twig'
+Plugin 'spf13/PIV'
+Plugin 'arnaud-lb/vim-php-namespace'
+Plugin 'beyondwords/vim-twig'
 
 " Python
-Bundle 'klen/python-mode'
-Bundle 'yssource/python.vim'
-Bundle 'python_match.vim'
-Bundle 'pythoncomplete'
+Plugin 'klen/python-mode'
+Plugin 'yssource/python.vim'
+Plugin 'python_match.vim'
+Plugin 'pythoncomplete'
 
 " Javascript
-Bundle 'elzr/vim-json'
-Bundle 'groenewege/vim-less'
-Bundle 'pangloss/vim-javascript'
-Bundle 'briancollins/vim-jst'
-Bundle 'kchmck/vim-coffee-script'
+Plugin 'elzr/vim-json'
+Plugin 'groenewege/vim-less'
+Plugin 'pangloss/vim-javascript'
+Plugin 'briancollins/vim-jst'
+Plugin 'kchmck/vim-coffee-script'
 
 " Scala
-Bundle 'derekwyatt/vim-scala'
-Bundle 'derekwyatt/vim-sbt'
-Bundle 'xptemplate'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'derekwyatt/vim-sbt'
+Plugin 'xptemplate'
 
 " Haskell
-Bundle 'travitch/hasksyn'
-Bundle 'dag/vim2hs'
-Bundle 'Twinside/vim-haskellConceal'
-Bundle 'Twinside/vim-haskellFold'
-Bundle 'lukerandall/haskellmode-vim'
-Bundle 'eagletmt/neco-ghc'
-Bundle 'eagletmt/ghcmod-vim'
-Bundle 'Shougo/vimproc'
-Bundle 'adinapoli/cumino'
-Bundle 'bitc/vim-hdevtools'
+Plugin 'travitch/hasksyn'
+Plugin 'dag/vim2hs'
+Plugin 'Twinside/vim-haskellConceal'
+Plugin 'Twinside/vim-haskellFold'
+Plugin 'lukerandall/haskellmode-vim'
+Plugin 'eagletmt/neco-ghc'
+Plugin 'eagletmt/ghcmod-vim'
+Plugin 'Shougo/vimproc'
+Plugin 'adinapoli/cumino'
+Plugin 'bitc/vim-hdevtools'
 
 " Html
-Bundle 'amirh/HTML-AutoCloseTag'
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'gorodinskiy/vim-coloresque'
-Bundle 'tpope/vim-haml'
+Plugin 'amirh/HTML-AutoCloseTag'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'gorodinskiy/vim-coloresque'
+Plugin 'tpope/vim-haml'
 
 " Ruby
-Bundle 'tpope/vim-rails'
+Plugin 'tpope/vim-rails'
 
 " Puppet
-Bundle 'rodjek/vim-puppet'
+Plugin 'rodjek/vim-puppet'
 
 " Go
-Bundle 'fatih/vim-go'
+Plugin 'fatih/vim-go'
 
 " Misc
-Bundle 'wting/rust.vim'
-Bundle 'tpope/vim-markdown'
-Bundle 'spf13/vim-preview'
-Bundle 'tpope/vim-cucumber'
-Bundle 'cespare/vim-toml'
-Bundle 'quentindecock/vim-cucumber-align-pipes'
-Bundle 'saltstack/salt-vim'
+Plugin 'wting/rust.vim'
+Plugin 'tpope/vim-markdown'
+Plugin 'spf13/vim-preview'
+Plugin 'tpope/vim-cucumber'
+Plugin 'cespare/vim-toml'
+Plugin 'quentindecock/vim-cucumber-align-pipes'
+Plugin 'saltstack/salt-vim'
 
 
 

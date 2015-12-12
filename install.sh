@@ -50,6 +50,23 @@ if [ $? -eq 1 ]; then
     bad "No git found. You need it."
 fi
 
+# Clone zvim and vundle
+if [ ! -e "$app_dir/.git" ]; then
+    git clone "$app_uri" "$app_dir"; ret="$?"
+    good "Zvim cloned."
+    git clone "$vundle_uri" "$app_dir/plugins/vundle"; ret="$?"
+    good "Vundle cloned."
+else
+    pushd . >/dev/null
+    printf "Updating zvim..."
+    cd "$app_dir" && git pull origin master; ret="$?"
+    printf "Done.\n"
+    printf "Updating vundle..."
+    cd "$app_dir/plugins/vundle" && git pull origin master; ret="$?"
+    printf "Done.\n"
+    popd >/dev/null
+fi
+
 # Setup dirs
 if [ ! -d "$app_dir/plugins" ]; then
     mkdir -p "$app_dir/plugins"
@@ -69,24 +86,6 @@ for f in ".vim" ".vimrc" ".gvimrc"; do
 done
 ret="$ret"
 good "Backup complete. Put them in ${backup}."
-
-
-# Clone zvim and vundle
-if [ ! -e "$app_dir/.git" ]; then
-    git clone "$app_uri" "$app_dir"; ret="$?"
-    good "Zvim cloned."
-    git clone "$vundle_uri" "$app_dir/plugins/vundle"; ret="$?"
-    good "Vundle cloned."
-else
-    pushd . >/dev/null
-    printf "Updating zvim..."
-    cd "$app_dir" && git pull origin master; ret="$?"
-    printf "Done.\n"
-    printf "Updating vundle..."
-    cd "$app_dir/plugins/vundle" && git pull origin master; ret="$?"
-    printf "Done.\n"
-    popd >/dev/null
-fi
 
 # Link zvim rc files
 ret=0
