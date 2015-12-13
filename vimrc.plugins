@@ -76,6 +76,9 @@ Plugin 'yssource/python.vim'
 Plugin 'python_match.vim'
 Plugin 'pythoncomplete'
 
+" Swift
+Plugin 'keith/swift.vim'
+
 " Javascript
 Plugin 'elzr/vim-json'
 Plugin 'groenewege/vim-less'
