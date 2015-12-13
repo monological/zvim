@@ -20,7 +20,7 @@
 set nocompatible
 filetype off
 set rtp+=~/.zvim/plugins/vundle
-call vundle#begin()
+call vundle#begin("~/.zvim/plugins")
 
 " Core
 Plugin 'VundleVim/vundle'
@@ -62,7 +62,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-commentary'
 Plugin 'godlygeek/tabular'
 if executable('ctags')
-    Bundle 'majutsushi/tagbar'
+    Plugin 'majutsushi/tagbar'
 endif
 
 " Php
