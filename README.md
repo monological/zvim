@@ -33,8 +33,10 @@
 
 ## Customization
 
-* Add vim plugin github urls to  ~/.vimrc.plugins
 * Edit ~/.vimrc if you desire to change anything
+* Add vim plugin github urls to  ~/.vimrc.plugins
+* Then run `vim +PluginUpdate +PluginClean +q`
+
 
 ## Uninstallation
 
