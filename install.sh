@@ -31,13 +31,16 @@ bad(){
 
 good() {
     if [ "$ret" -eq '0' ]; then
-    p "\e[32m[✔]\e[0m ${1}${2}"
+        p "\e[32m[✔ ]\e[0m ${1}${2}"
+    else
+        bad "Error: ${1}${2}"
+        exit 1
     fi
 }
 
 # Pre-install checks
 if [ -z "$HOME" ]; then
-    bad "Your HOME var is empty. Why?"  
+    bad "Your HOME var is empty. You need it set."  
 fi
 
 hash vim 2>/dev/null
@@ -52,18 +55,16 @@ fi
 
 # Clone zvim and vundle
 if [ ! -e "$app_dir/.git" ]; then
-    git clone "$app_uri" "$app_dir"; ret="$?"
-    good "Zvim cloned."
-    git clone "$vundle_uri" "$app_dir/plugins/vundle"; ret="$?"
-    good "Vundle cloned."
+    git clone -q "$app_uri" "$app_dir"; ret="$?"
+    good "zvim cloned"
+    git clone -q "$vundle_uri" "$app_dir/plugins/vundle"; ret="$?"
+    good "vundle cloned"
 else
     pushd . >/dev/null
-    printf "Updating zvim..."
-    cd "$app_dir" && git pull origin master; ret="$?"
-    printf "Done.\n"
-    printf "Updating vundle..."
-    cd "$app_dir/plugins/vundle" && git pull origin master; ret="$?"
-    printf "Done.\n"
+    cd "$app_dir" && git pull -q origin master; ret="$?"
+    good "updated zvim"
+    cd "$app_dir/plugins/vundle" && git pull -q origin master; ret="$?"
+    good "updated vundle"
     popd >/dev/null
 fi
 
@@ -85,7 +86,7 @@ for f in ".vim" ".vimrc" ".gvimrc"; do
     ret=$ret || $?
 done
 ret="$ret"
-good "Backup complete. Put them in ${backup}."
+good "backup complete (${backup})"
 
 # Link zvim rc files
 ret=0
@@ -93,7 +94,7 @@ ln -sf "$app_dir/vimrc" "$HOME/.vimrc"; ret=$ret || $?
 ln -sf "$app_dir/vimrc.plugins" "$HOME/.vimrc.plugins"; ret=$ret || $?
 ln -sf "$app_dir/vimrc.before" "$HOME/.vimrc.before"; ret=$ret || $?
 ret="$ret"
-good "Zvim rc files linked."
+good "rc files linked"
 
 # Install plugins
 sys_shell="$SHELL"
@@ -105,12 +106,10 @@ vim -u "$app_dir/vimrc.plugins" \
     "+qall"
 ret="$ret"
 export SHELL="$sys_shell"
-good "Plugins installed."
+good "plugins installed"
 
 # Finished
-good "\nZvim installation complete. Live long and prosper 🖖 "
-
-
+printf '%b\n' "\e[32m[🖖 ]\e[0m live long and prosper" >&2
 
 
 

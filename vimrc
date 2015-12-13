@@ -46,7 +46,7 @@ set wildignore=*.0,*~,*.pyc,.git/*,.hg/*,.svn\*i
 set backspace=eol,start,indent
 set whichwrap=b,s,h,l,<,>,[,]
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
-set list            " list hidden chars
+set nolist            " list hidden chars
 set smartcase       
 set ignorecase
 set hlsearch
@@ -68,8 +68,13 @@ set virtualedit=onemore
 " COLOR
 "
 syntax on
+    
 try
+    let g:solarized_termcolors=256
     colorscheme solarized
+    let g:solarized_termtrans=0
+    let g:solarized_contrast="high"
+    let g:solarized_visibility="high"
 catch
 endtry
 set background=dark
@@ -174,7 +179,7 @@ let g:syntastic_python_checkers=['jshint']
 
 " ctrl-p
 let g:ctrlp_working_path_mode=0
-let g:ctrlp_map = 
+" let g:ctrlp_map = 
 
 
 
