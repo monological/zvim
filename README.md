@@ -19,24 +19,24 @@
 * works on posix systems (unix and mac) 
 * fast startup
 
-# Installation
+## Installation
 
-*requires: curl, vim and git*
+**requires: curl, vim and git**
 
 * `curl https://github.com/monological/zvim/blob/master/install.sh > zvim.sh`
 * `sh zvim.sh && rm zvim.sh`
 
-# Updating
+## Updating
 
 * `cd ~/.zvim`
 * `sh install.sh`
 
-# Customization
+## Customization
 
 * Add vim plugin github urls to  ~/.vimrc.plugins
 * Edit ~/.vimrc if you desire to change anything
 
-# Uninstallation
+## Uninstallation
 
 * `cd ~/.zvim`
 * `sh uninstall.sh && cd ~/`
