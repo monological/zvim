@@ -23,7 +23,7 @@ set rtp+=~/.zvim/plugins/vundle
 call vundle#begin("~/.zvim/plugins")
 
 " Core
-Plugin 'VundleVim/vundle'
+Plugin 'monological/vundle'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 
