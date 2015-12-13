@@ -18,8 +18,8 @@
 #
 app_name="zvim"
 app_dir="$HOME/.zvim"
-app_uri="https://github.com/monological/zvim.git"
-vundle_uri="https://github.com/vundlevim/vundle.vim.git"
+app_uri="https://github.com/monological/zvim"
+vundle_uri="https://github.com/monological/vundle"
 
 p() {
     printf '%b\n' "$1" >&2
