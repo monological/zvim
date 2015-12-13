@@ -18,9 +18,9 @@
 "
 "
 set nocompatible
-set rtp+=~/.zvim/plugins/vundle
-call vundle#rc()
 filetype off
+set rtp+=~/.zvim/plugins/vundle
+call vundle#begin()
 
 " Core
 Plugin 'VundleVim/vundle'
@@ -124,26 +124,6 @@ Plugin 'cespare/vim-toml'
 Plugin 'quentindecock/vim-cucumber-align-pipes'
 Plugin 'saltstack/salt-vim'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+call vundle#end()
+filetype plugin indent on
 
