@@ -109,6 +109,7 @@ export SHELL="$sys_shell"
 good "plugins installed"
 
 # Finished
+good "zvim installation complete"
 printf '%b\n' "\e[32m[🖖 ]\e[0m live long and prosper" >&2
 
 
