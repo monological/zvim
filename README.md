@@ -23,7 +23,7 @@
 
 **requires: curl, vim and git**
 
-* `curl https://github.com/monological/zvim/blob/master/install.sh > zvim.sh`
+* `curl https://raw.githubusercontent.com/monological/zvim/master/install.sh > zvim.sh`
 * `sh zvim.sh && rm zvim.sh`
 
 ## Updating
