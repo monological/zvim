@@ -77,6 +77,7 @@ set background=light
 set encoding=utf-8
 set ffs=unix,dos,mac
 highlight clear SignColumn " change gutter color to clear
+highlight clear CursorLine " change current underline color to clear
 
 " FORMAT
 "
