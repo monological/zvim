@@ -73,8 +73,8 @@ Plugin 'beyondwords/vim-twig'
 " Python
 Plugin 'klen/python-mode'
 Plugin 'yssource/python.vim'
-Plugin 'python_match.vim'
-Plugin 'pythoncomplete'
+"Plugin 'python_match.vim'
+"Plugin 'pythoncomplete'
 
 " Swift
 Plugin 'keith/swift.vim'
