@@ -72,19 +72,11 @@ set undodir=~/.vimundo  " directory where to store undo file info
 " COLOR
 "
 syntax on
-    
-try
-    let g:solarized_termcolors=256
-    colorscheme solarized
-    let g:solarized_termtrans=0
-    let g:solarized_contrast="high"
-    let g:solarized_visibility="high"
-catch
-endtry
-set background=dark
+colorscheme peachpuff
+set background=light
 set encoding=utf-8
 set ffs=unix,dos,mac
-
+highlight clear SignColumn " change gutter color to clear
 
 " FORMAT
 "
