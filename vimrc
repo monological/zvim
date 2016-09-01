@@ -41,7 +41,7 @@ set scrolljump=5    " how much to jump
 set mouse=a         " allow mouse usage
 set mousehide       " hide mouse when typing
 set wildmenu        " show list instead of completing
-set wildmode=list:longest,full
+set wildmode=list,longest,full
 set wildignore=*.0,*~,*.pyc,.git/*,.hg/*,.svn\*i
 set backspace=eol,start,indent
 set whichwrap=b,s,h,l,<,>,[,]
@@ -58,11 +58,15 @@ set mat=2           " 1/10 of s to blink
 set noerrorbells    " bells off
 set novisualbell    " bells off
 set splitbelow      " sp opens on bottom
+set splitright      " vsp opens on right
 set showmode        " show current mode
 set nofoldenable    " folding off
 set cursorline      " show currrent line
 set shortmess+=filmnrxoOtT
 set virtualedit=onemore 
+set autochdir       " open files relative to current file
+set undofile        " persist undo history for files across quits
+set undodir=~/.vimundo  " directory where to store undo file info 
 
 
 " COLOR
