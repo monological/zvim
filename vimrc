@@ -168,7 +168,9 @@ nmap <Leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr . "[\t"<
 "
 
 " airline
-let g:airline_theme="luna"
+set laststatus=2
+let g:airline_powerline_fonts=0
+let g:airline_theme="dark"
 
 " syntastic
 let g:syntastic_python_checkers=['pyflakes']
