@@ -185,3 +185,5 @@ let g:ctrlp_working_path_mode=0
 let g:pymode_lint_checkers = ['pyflakes', 'mccabe']
 let g:pymode_lint_ignore = "C0301,W0105,R0902,C0103,W0403,C901,R0903,W0142,R0201,R0904,E1103,W0703,W0221,C0323,E1101,R0914,E0611,F0401,R0915,E501,E203,W0232,W1001,W0122,W0511,W0104,R0912,W0621,W0223,W0201,W0612,C0302,I0011,R0901,W1201,W0622,R0913,E0702"
 
+doautoall filetypedetect BufRead
+
