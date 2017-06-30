@@ -11,9 +11,9 @@
 
 
 
-# Minimalistic Vim 
+# Minimalist Vim 
 
-* minimalistic config files and scripts
+* minimalist config files and scripts
 * easy to tweak to your liking
 * plugin management using Vundle
 * works on posix systems (unix and mac) 

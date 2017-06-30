@@ -18,6 +18,10 @@
 
 set nocompatible
 
+if filereadable(expand("~/.vimrc.before"))
+    source ~/.vimrc.before
+endif
+
 if filereadable(expand("~/.vimrc.plugins"))
     source ~/.vimrc.plugins
 endif
@@ -170,12 +174,15 @@ nmap <Leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr . "[\t"<
 
 " airline
 set laststatus=2
-let g:airline_powerline_fonts=0
+let g:airline_powerline_fonts=1
 let g:airline_theme="dark"
 
 " syntastic
 let g:syntastic_python_checkers=['pyflakes']
 let g:syntastic_python_checkers=['jshint']
+
+let g:syntastic_c_check_header = 1
+let g:syntastic_c_compiler = 'clang'
 
 " ctrl-p
 let g:ctrlp_working_path_mode=0
