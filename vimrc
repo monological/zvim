@@ -67,7 +67,8 @@ set virtualedit=onemore
 set autochdir       " open files relative to current file
 set undofile        " persist undo history for files across quits
 set undodir=~/.vimundo  " directory where to store undo file info 
-
+set timeoutlen=500 " lower mapping delay 
+set ttimeoutlen=0 " lower keycode delay
 
 " COLOR
 "
