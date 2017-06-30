@@ -141,7 +141,8 @@ map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR>
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " toggle spell check
-map <leader>ss :setlocal spell!<br>
+nmap <silent> <leader>ss :set spell!<CR>
+set spelllang=en_us
 
 " toggle paste mode
 map <leader>p :setlocal paste!<CR>
