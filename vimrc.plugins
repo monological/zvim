@@ -28,7 +28,7 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 
 " General
-Plugin 'scrooloose/nerdtree'
+"Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'monological/vim-colors-monological'
 Plugin 'spf13/vim-colors'
@@ -45,7 +45,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'powerline/fonts'
 Plugin 'bling/vim-bufferline'
 Plugin 'Lokaltog/vim-easymotion'
-Plugin 'jistr/vim-nerdtree-tabs'
+"Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'mbbill/undotree'
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -53,8 +53,8 @@ Plugin 'vim-scripts/restore_view.vim'
 Plugin 'mhinz/vim-signify'
 Plugin 'tpope/vim-abolish.git'
 Plugin 'osyo-manga/vim-over'
-Plugin 'kana/vim-textobj-user'
-Plugin 'kana/vim-textobj-indent'
+"Plugin 'kana/vim-textobj-user'
+"Plugin 'kana/vim-textobj-indent'
 Plugin 'gcmt/wildfire.vim'
 
 " Programming 
@@ -62,17 +62,17 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
-Plugin 'scrooloose/nerdcommenter'
+"Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-commentary'
-Plugin 'godlygeek/tabular'
+"Plugin 'godlygeek/tabular'
 if executable('ctags')
     Plugin 'majutsushi/tagbar'
 endif
 
 " Php
-Plugin 'spf13/PIV'
-Plugin 'arnaud-lb/vim-php-namespace'
-Plugin 'beyondwords/vim-twig'
+"Plugin 'spf13/PIV'
+"Plugin 'arnaud-lb/vim-php-namespace'
+"Plugin 'beyondwords/vim-twig'
 
 " Python
 Plugin 'klen/python-mode'
@@ -81,51 +81,51 @@ Plugin 'yssource/python.vim'
 "Plugin 'pythoncomplete'
 
 " Swift
-Plugin 'keith/swift.vim'
+"Plugin 'keith/swift.vim'
 
 " Javascript
-Plugin 'elzr/vim-json'
-Plugin 'groenewege/vim-less'
-Plugin 'pangloss/vim-javascript'
-Plugin 'briancollins/vim-jst'
-Plugin 'kchmck/vim-coffee-script'
+"Plugin 'elzr/vim-json'
+"Plugin 'groenewege/vim-less'
+"Plugin 'pangloss/vim-javascript'
+"Plugin 'briancollins/vim-jst'
+"Plugin 'kchmck/vim-coffee-script'
 
 " Scala
-Plugin 'derekwyatt/vim-scala'
-Plugin 'derekwyatt/vim-sbt'
+"Plugin 'derekwyatt/vim-scala'
+"Plugin 'derekwyatt/vim-sbt'
 "Plugin 'xptemplate'
 
 " Haskell
-Plugin 'travitch/hasksyn'
-Plugin 'dag/vim2hs'
-Plugin 'Twinside/vim-haskellConceal'
-Plugin 'Twinside/vim-haskellFold'
-Plugin 'lukerandall/haskellmode-vim'
-Plugin 'eagletmt/neco-ghc'
-Plugin 'eagletmt/ghcmod-vim'
-Plugin 'Shougo/vimproc'
-Plugin 'adinapoli/cumino'
-Plugin 'bitc/vim-hdevtools'
+"Plugin 'travitch/hasksyn'
+"Plugin 'dag/vim2hs'
+"Plugin 'Twinside/vim-haskellConceal'
+"Plugin 'Twinside/vim-haskellFold'
+"Plugin 'lukerandall/haskellmode-vim'
+"Plugin 'eagletmt/neco-ghc'
+"Plugin 'eagletmt/ghcmod-vim'
+"Plugin 'Shougo/vimproc'
+"Plugin 'adinapoli/cumino'
+"Plugin 'bitc/vim-hdevtools'
 
 " Html
-Plugin 'amirh/HTML-AutoCloseTag'
+"Plugin 'amirh/HTML-AutoCloseTag'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'tpope/vim-haml'
 
 " Ruby
-Plugin 'tpope/vim-rails'
+"Plugin 'tpope/vim-rails'
 
 " Puppet
-Plugin 'rodjek/vim-puppet'
+"Plugin 'rodjek/vim-puppet'
 
 " Go
 Plugin 'fatih/vim-go'
 
 " Misc
-Plugin 'wting/rust.vim'
+"Plugin 'wting/rust.vim'
 Plugin 'tpope/vim-markdown'
-Plugin 'spf13/vim-preview'
+"Plugin 'spf13/vim-preview'
 Plugin 'tpope/vim-cucumber'
 Plugin 'cespare/vim-toml'
 Plugin 'quentindecock/vim-cucumber-align-pipes'
