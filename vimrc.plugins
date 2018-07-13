@@ -56,6 +56,7 @@ Plugin 'osyo-manga/vim-over'
 "Plugin 'kana/vim-textobj-user'
 "Plugin 'kana/vim-textobj-indent'
 Plugin 'gcmt/wildfire.vim'
+Plugin 'monological/mru'
 
 " Programming 
 Plugin 'scrooloose/syntastic'

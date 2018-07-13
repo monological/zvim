@@ -77,7 +77,7 @@ set ttimeoutlen=0 " lower keycode delay
 " COLOR
 "
 syntax on
-colorscheme monological
+colorscheme camo
 set background=light
 set encoding=utf-8
 set ffs=unix,dos,mac
@@ -202,6 +202,9 @@ let g:pymode_folding=0
 let g:pymode_doc=0
 let g:pymode_rope=0
 
+" MRU
+let MRU_Use_Current_Window = 0
+map <leader>o :MRU<CR>
 
 doautoall filetypedetect BufRead
 
