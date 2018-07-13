@@ -185,6 +185,8 @@ let g:syntastic_python_checkers=['jshint']
 let g:syntastic_c_check_header = 1
 let g:syntastic_c_compiler = 'clang'
 
+let g:syntastic_systemverilog_compiler_options = '-Wall -sv --lint-only'
+
 " ctrl-p
 let g:ctrlp_working_path_mode=0
 " let g:ctrlp_map = 
@@ -194,13 +196,15 @@ let g:signify_disable_by_default = 1
 map <leader>g :SignifyToggle<CR>
 
 " pymode
-let g:pymode_python = 'python2'
+"let g:pymode_python = 'python'
 let g:pymode_lint_checkers = ['pyflakes', 'mccabe']
 let g:pymode_lint_ignore = "C0301,W0105,R0902,C0103,W0403,C901,R0903,W0142,R0201,R0904,E1103,W0703,W0221,C0323,E1101,R0914,E0611,F0401,R0915,E501,E203,W0232,W1001,W0122,W0511,W0104,R0912,W0621,W0223,W0201,W0612,C0302,I0011,R0901,W1201,W0622,R0913,E0702"
 let g:pymode_options_colorcolumn=0
 let g:pymode_folding=0
 let g:pymode_doc=0
 let g:pymode_rope=0
+
+:nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 
 
 doautoall filetypedetect BufRead
