@@ -56,13 +56,14 @@ Plugin 'osyo-manga/vim-over'
 "Plugin 'kana/vim-textobj-user'
 "Plugin 'kana/vim-textobj-indent'
 Plugin 'gcmt/wildfire.vim'
+Plugin 'monological/mru'
 
 " Programming 
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
-"Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-commentary'
 "Plugin 'godlygeek/tabular'
 if executable('ctags')
