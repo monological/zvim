@@ -203,11 +203,11 @@ let g:pymode_options_colorcolumn=0
 let g:pymode_folding=0
 let g:pymode_doc=0
 let g:pymode_rope=0
+let g:pymode_python = 'python'
 
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 
 " MRU
-let MRU_Use_Current_Window = 0
 map <leader>o :MRU<CR>
 
 doautoall filetypedetect BufRead

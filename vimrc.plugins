@@ -77,8 +77,8 @@ endif
 "Plugin 'beyondwords/vim-twig'
 
 " Python
-Plugin 'klen/python-mode'
-Plugin 'yssource/python.vim'
+Plugin 'python-mode/python-mode'
+"Plugin 'yssource/python.vim'
 "Plugin 'python_match.vim'
 "Plugin 'pythoncomplete'
 
