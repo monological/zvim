@@ -32,6 +32,7 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'monological/vim-colors-monological'
 Plugin 'spf13/vim-colors'
+Plugin 'napcs/vim-mycontrast'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-obsession'
@@ -50,7 +51,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'mbbill/undotree'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'vim-scripts/restore_view.vim'
-Plugin 'mhinz/vim-signify'
+"Plugin 'mhinz/vim-signify'
 Plugin 'tpope/vim-abolish.git'
 Plugin 'osyo-manga/vim-over'
 "Plugin 'kana/vim-textobj-user'
@@ -137,6 +138,10 @@ Plugin 'vhda/verilog_systemverilog.vim'
 
 " Cap'n Proto syntax
 Plugin 'cstrahan/vim-capnp'
+
+" CommonLisp
+Plugin 'l04m33/vlime', {'rtp': 'vim/'}
+Plugin 'bhurlow/vim-parinfer'
 
 call vundle#end()
 filetype plugin indent on
