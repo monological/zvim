@@ -81,6 +81,7 @@ Plugin 'python-mode/python-mode'
 "Plugin 'yssource/python.vim'
 "Plugin 'python_match.vim'
 "Plugin 'pythoncomplete'
+Plugin 'Glench/Vim-Jinja2-Syntax'
 
 " Swift
 "Plugin 'keith/swift.vim'
@@ -142,6 +143,9 @@ Plugin 'cstrahan/vim-capnp'
 " CommonLisp
 Plugin 'l04m33/vlime', {'rtp': 'vim/'}
 Plugin 'bhurlow/vim-parinfer'
+
+" Vim : call using :StartupTime ~/foo.vim 100
+Plugin 'tweekmonster/startuptime.vim'
 
 call vundle#end()
 filetype plugin indent on
