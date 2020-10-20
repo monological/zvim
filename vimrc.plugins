@@ -147,6 +147,15 @@ Plugin 'bhurlow/vim-parinfer'
 " Vim : call using :StartupTime ~/foo.vim 100
 Plugin 'tweekmonster/startuptime.vim'
 
+" c/c++
+Plugin 'xavierd/clang_complete'
+
+" Rust
+Plugin 'rust-lang/rust.vim'
+
+" reStructuredText
+Plugin 'gu-fan/riv.vim'
+
 call vundle#end()
 filetype plugin indent on
 
