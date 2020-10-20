@@ -212,8 +212,14 @@ autocmd WinEnter * if winnr('$') == 1 && ! empty(&buftype) && ! &modified | quit
 
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 
+" don't allow Ex mode. The worst.
+:map Q <Nop>
+
 " MRU
 map <leader>o :MRU<CR>
+
+" clang complete
+let g:clang_library_path='/usr/local/opt/llvm/lib'
 
 doautoall filetypedetect BufRead
 
