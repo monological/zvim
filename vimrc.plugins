@@ -60,7 +60,7 @@ Plugin 'gcmt/wildfire.vim'
 Plugin 'monological/mru'
 
 " Programming 
-Plugin 'scrooloose/syntastic'
+Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
@@ -70,6 +70,9 @@ Plugin 'tpope/vim-commentary'
 if executable('ctags')
     Plugin 'majutsushi/tagbar'
 endif
+
+"completion
+Plugin 'ycm-core/YouCompleteMe'
 
 " Php
 "Plugin 'spf13/PIV'
@@ -154,7 +157,7 @@ Plugin 'xavierd/clang_complete'
 Plugin 'rust-lang/rust.vim'
 
 " reStructuredText
-Plugin 'gu-fan/riv.vim'
+"Plugin 'gu-fan/riv.vim'
 
 call vundle#end()
 filetype plugin indent on

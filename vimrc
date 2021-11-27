@@ -188,6 +188,8 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 let g:syntastic_c_check_header = 1
 let g:syntastic_c_compiler = 'clang'
+let g:syntastic_c_checkers=['clang_check']
+let g:syntastic_c_config_file = "~/.syntastic_c_config"
 
 let g:syntastic_systemverilog_compiler_options = '-Wall -sv --lint-only'
 
@@ -206,7 +208,7 @@ let g:pymode_folding=0
 let g:pymode_doc=0
 let g:pymode_rope=0
 let g:pymode_python = 'python3'
-let g:pymode_lint_options_mccabe = { 'complexity': 16 }
+let g:pymode_lint_options_mccabe = { 'complexity': 20 }
 " close pylint scratch buffer on exit
 autocmd WinEnter * if winnr('$') == 1 && ! empty(&buftype) && ! &modified | quit | endif
 
@@ -221,6 +223,6 @@ map <leader>o :MRU<CR>
 " clang complete
 let g:clang_library_path='/usr/local/opt/llvm/lib'
 
-doautoall filetypedetect BufRead
+"doautoall filetypedetect BufRead
 
 
